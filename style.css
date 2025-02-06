@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1E1147 0%, #350B4C 50%, #1E1147 100%);
+    background-image: url('https://raw.githubusercontent.com/byrouti/MaestroMysterybox/main/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    background: rgba(30, 17, 71, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    padding: 40px;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.button {
+    background: #ffffff;
+    color: #2575fc;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #2575fc;
+    color: #ffffff;
+}
+
+.claim-button {
+    background: linear-gradient(135deg, #B721FF 0%, #5C33F6 100%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(183, 33, 255, 0.4);
+}
+
+.claim-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(183, 33, 255, 0.6);
+}
+
+#already-clicked {
+    display: none;
+}
