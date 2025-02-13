@@ -1,80 +1,102 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #1E1147 0%, #350B4C 50%, #1E1147 100%);
-    background-image: url('https://raw.githubusercontent.com/byrouti/MaestroMysterybox/main/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .container {
-    background: rgba(30, 17, 71, 0.85);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    padding: 40px;
-    max-width: 500px;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 90%;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #fff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  color: #0088cc;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
-p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    color: #fff;
+.congrats {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #00ff00;
 }
 
-.button {
-    background: #ffffff;
-    color: #2575fc;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+.prize {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffd700;
+  font-weight: bold;
 }
 
-.button:hover {
-    background: #2575fc;
-    color: #ffffff;
+.contact-info {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-.claim-button {
-    background: linear-gradient(135deg, #B721FF 0%, #5C33F6 100%);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(183, 33, 255, 0.4);
+.contact-info a {
+  color: #0088cc;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.claim-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(183, 33, 255, 0.6);
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 #already-clicked {
-    display: none;
+  color: #ff4444;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.claim-button {
+  background: linear-gradient(135deg, #B721FF 0%, #5C33F6 100%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(183, 33, 255, 0.4);
+}
+
+.claim-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(183, 33, 255, 0.6);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
 }
