@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // Get token and prize from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
         const token = urlParams.get("token");
+        console.log(token)
+
         const prize = urlParams.get("prize");
 
         if (!token) {
@@ -24,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("usedTokens", JSON.stringify(usedTokens));
 
             // Show the prize
-            const prizeText = prize ? decodeURIComponent(prize) : getRandomPrize();
-            document.getElementById("prize").textContent = prizeText;
+            document.getElementById("prize").textContent = prize ? decodeURIComponent(prize) : getRandomPrize();
 
             // Show "winner" div, hide "already-clicked"
             document.getElementById("winner").style.display = "block";
@@ -38,10 +39,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function getRandomPrize() {
     const prizes = [
-        "Maestro premium account for 1 month",
-        "Maestro premium account for 1 week",
-        "Maestro premium account for 3 days",
-        "Maestro premium account for 1 day"
+        "1 Maestro premium account for 1 month",
+        "2 Maestro premium account for 1 week",
+        "3 Maestro premium account for 1 week",
+        "4 Maestro premium account for 1 week",
+        "5 Maestro premium account for 1 week",
+        "6 Maestro premium account for 1 week",
+        "7 Maestro premium account for 3 days",
+        "8 Maestro premium account for 3 days",
+        "9 Maestro premium account for 1 day",
+        "10 Maestro premium account for 1 day"
     ];
+    
     return prizes[Math.floor(Math.random() * prizes.length)];
 }
