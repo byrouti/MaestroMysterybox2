@@ -1,17 +1,19 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #1a1a1a;
+  height: 100vh;
+  background: linear-gradient(135deg, #1E1147 0%, #350B4C 50%, #1E1147 100%);
   color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .background-image {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -19,58 +21,48 @@ body {
   background-image: url('background.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.3;
+  background-repeat: no-repeat;
+  opacity: 1;
   z-index: -1;
 }
 
 .container {
-  text-align: center;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  max-width: 600px;
-  width: 90%;
+  position: relative;
+  z-index: 1;
+  background: rgba(30, 17, 71, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  padding: 40px;
+  max-width: 500px;
 }
 
 h1 {
-  color: #0088cc;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.congrats {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #00ff00;
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 .prize {
   font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #ffd700;
   font-weight: bold;
+  color: #B721FF;
+  margin: 30px 0;
+  text-shadow: 0 0 10px rgba(183, 33, 255, 0.5);
 }
 
-.contact-info {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.contact-info a {
-  color: #0088cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-#already-clicked {
-  color: #ff4444;
-  font-size: 1.2rem;
-  margin-top: 2rem;
+.congrats {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
 .claim-button {
@@ -95,8 +87,15 @@ h1 {
   box-shadow: 0 6px 20px rgba(183, 33, 255, 0.6);
 }
 
-p {
+#already-claimed {
+  color: #ff4444;
   font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-top: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+  display: none;
+  background: rgba(255, 68, 68, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 68, 68, 0.2);
 }
