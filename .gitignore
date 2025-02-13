@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environment
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Testing
+test_*.py
+*.test.js
+
+# Local development
+*.log
+*.sqlite
+*.db
+click_data.json
+winners.json
+winners_archive.json
+*_archive_*.json
+
+# Executables and archives
+*.exe
+*.zip
+
+# Local configuration
+setup_tunnel.py
+verify_server.py
